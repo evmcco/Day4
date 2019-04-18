@@ -1,14 +1,14 @@
 
 # Bill Calculator
 bill = int(input("What's the total bill amount? "))
-service = input("How was the service? ")
+service = input("How was the service? ").lower()
 split = int(input("Split how many ways? "))
 tip = 0
 
 def print_amounts():
-    print("Tip Amount: " + str(tip) + "$")
-    print("Total Amount: " + str(tip+bill) + "$")
-    print("Amount per person: " + str((tip + bill) / split) + "$")
+    print("Tip Amount:  $%.2d" % tip)
+    print("Total Amount: $%.2d" % (tip+bill))
+    print("Amount per person: $%.2d" % ((tip + bill) / split))
 
 if service == 'good':
     tip = bill * .2
