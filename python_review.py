@@ -23,14 +23,14 @@ else:
     print("Invalid Response, please try again")
 
 """
-# Temp conversion
+# Temp Conversion
 temp_c = int(input("What's the temperature in C? "))
 temp_f = temp_c * 1.8 + 32
 print(str(temp_f)+ " F")
 
+------------------------------------------------------------------
 
-
-# day of the week
+# Day of the Week
 day = int(input("Pick a number 0-6 "))
 string_ending = 'day'
 if day == 0:
