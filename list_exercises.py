@@ -29,9 +29,9 @@ result = 0
 for a in range(mm_height):
     for b in range(mm_length):
         # next 2 for loops calculate the result for that index
-        for c in range(mm_height-1):
+        for c in range(mm_height):
             print("a: %d b: %d c: %d" % (a,b,c))
-            result = matrix_one[c][a] * matrix_two[b][c]
+            result = matrix_one[a][c] * matrix_two[c][b]
             print(str(result))
             multiplied_matrix[a][b] += result
             print(multiplied_matrix)
